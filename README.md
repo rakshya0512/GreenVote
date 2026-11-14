@@ -84,8 +84,6 @@ GreenVote/
 │
 ├── GreenVote Documentation.pdf
 │
-├── GreenVote Documentation.docx
-│
 └── README.md
 ```
 
