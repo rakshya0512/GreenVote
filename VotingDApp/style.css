@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, #123c2c 0%, transparent 30%),
+        radial-gradient(circle at 80% 80%, #10352a 0%, transparent 30%),
+        #07130f;
+    color: white;
+    min-height: 100vh;
+}
+
+nav {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(7,19,15,0.8);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.network {
+    background: rgba(42, 200, 120, 0.1);
+    border: 1px solid rgba(72, 220, 140, 0.3);
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.dot,
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #43e98b;
+    margin-right: 7px;
+}
+
+#connectBtn {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    background: #3ddb83;
+    color: #06120d;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main {
+    width: 88%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.badge {
+    display: inline-block;
+    color: #64e6a0;
+    background: rgba(60, 220, 130, 0.08);
+    border: 1px solid rgba(60, 220, 130, 0.2);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #43df89;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: auto;
+    color: #a8bbb2;
+    line-height: 1.7;
+}
+
+.voting-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.candidate-card {
+    position: relative;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 28px;
+    transition: 0.25s;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+    border-color: #39d47d;
+}
+
+.featured {
+    border-color: rgba(61,219,131,0.4);
+}
+
+.popular {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #52e994;
+}
+
+.icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.07);
+    margin-bottom: 20px;
+}
+
+.candidate-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.candidate-card p {
+    color: #9cafA5;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 68px;
+}
+
+.vote-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-top: 17px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #9cafA5;
+    font-size: 13px;
+}
+
+.vote-info strong {
+    color: #4be38e;
+    font-size: 24px;
+}
+
+.vote-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #39d47d;
+    border-radius: 8px;
+    background: rgba(57,212,125,0.08);
+    color: #53e493;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.vote-btn:hover {
+    background: #3bd77f;
+    color: #07130f;
+}
+
+.results {
+    margin-top: 28px;
+    padding: 23px 28px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.09);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #51df91;
+}
+
+.results h2 {
+    margin: 7px 0;
+    font-size: 21px;
+}
+
+.results p {
+    color: #82988d;
+    font-size: 12px;
+}
+
+.total {
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    padding-left: 40px;
+}
+
+.total strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 30px;
+    color: #4be38e;
+}
+
+.blockchain-info {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 0 15px;
+    color: #82988d;
+    font-size: 12px;
+}
+
+.blockchain-info div {
+    display: flex;
+    align-items: center;
+}
+
+#message {
+    text-align: center;
+    color: #8ca198;
+    font-size: 13px;
+    margin: 15px 0 35px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #52685e;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 11px;
+}
+
+@media(max-width: 800px) {
+    .voting-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .blockchain-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .network {
+        display: none;
+    }
+}

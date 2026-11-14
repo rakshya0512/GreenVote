@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenVote | Decentralized Campus Voting</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">🌿 GreenVote</div>
+
+    <div class="nav-right">
+      <span class="network">
+        <span class="dot"></span>
+        Sepolia Testnet
+      </span>
+
+      <button id="connectBtn" onclick="connectWallet()">
+        Connect MetaMask
+      </button>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <section class="hero">
+      <div class="badge">◆ DECENTRALIZED CAMPUS GOVERNANCE</div>
+
+      <h1>
+        Vote for a <span>Greener Campus.</span>
+      </h1>
+
+      <p>
+        Choose the sustainability initiative our campus should prioritize.
+        Every vote is securely recorded on the Ethereum Sepolia blockchain.
+      </p>
+    </section>
+
+
+    <section class="voting-section">
+
+      <!-- SOLAR -->
+      <div class="candidate-card">
+        <div class="icon solar">☀️</div>
+
+        <h2>Solar Energy</h2>
+
+        <p>
+          Power the campus with clean and renewable solar energy.
+        </p>
+
+        <div class="vote-info">
+          <span>Current Votes</span>
+          <strong id="votes0">0</strong>
+        </div>
+
+        <button class="vote-btn" onclick="castVote(0)">
+          Cast Vote
+        </button>
+      </div>
+
+
+      <!-- WASTE -->
+      <div class="candidate-card featured">
+        <div class="popular">SMART CAMPUS</div>
+
+        <div class="icon waste">♻️</div>
+
+        <h2>Smart Waste Management</h2>
+
+        <p>
+          Introduce intelligent waste segregation and recycling systems.
+        </p>
+
+        <div class="vote-info">
+          <span>Current Votes</span>
+          <strong id="votes1">0</strong>
+        </div>
+
+        <button class="vote-btn" onclick="castVote(1)">
+          Cast Vote
+        </button>
+      </div>
+
+
+      <!-- WATER -->
+      <div class="candidate-card">
+        <div class="icon water">💧</div>
+
+        <h2>Rainwater Harvesting</h2>
+
+        <p>
+          Conserve water through sustainable collection and reuse systems.
+        </p>
+
+        <div class="vote-info">
+          <span>Current Votes</span>
+          <strong id="votes2">0</strong>
+        </div>
+
+        <button class="vote-btn" onclick="castVote(2)">
+          Cast Vote
+        </button>
+      </div>
+
+    </section>
+
+
+    <section class="results">
+
+      <div>
+        <span>LIVE ELECTION RESULTS</span>
+        <h2 id="leader">Waiting for votes...</h2>
+        <p>Current leading sustainability initiative</p>
+      </div>
+
+      <div class="total">
+        <span>TOTAL VOTES</span>
+        <strong id="totalVotes">0</strong>
+      </div>
+
+    </section>
+
+
+    <section class="blockchain-info">
+
+      <div>
+        <span class="status-dot"></span>
+        <p>
+          Secured by <strong>Ethereum Sepolia</strong>
+        </p>
+      </div>
+
+      <div>
+        🔐 One Wallet • One Vote
+      </div>
+
+      <div>
+        ⛓️ Transparent & Immutable
+      </div>
+
+    </section>
+
+    <div id="message">
+      Connect MetaMask to participate in the vote.
+    </div>
+
+  </main>
+
+
+  <footer>
+    GreenVote • Decentralized Voting Application • Ethereum Sepolia Test Network
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
